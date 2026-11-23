@@ -16,7 +16,8 @@ and static studio sites, many at once, mostly from cloud sessions.
    High effort here. (`/verify-ui`)
 4. **Ship: all the way to live.** Checks → a fresh agent reviews → out-of-code steps
    in order (migrations first) → PR with decisions up top → confirm production
-   actually changed → client explainer. (`/ship`)
+   actually changed → client explainer. (`/ship`) Database changes go through
+   `/supabase-change` first.
 5. **Write it down.** Every correction becomes a check in code, a kit skill,
    or one line in the repo's `CLAUDE.md`, in that order of preference. Never fix the
    same thing twice. (`/write-it-down`)

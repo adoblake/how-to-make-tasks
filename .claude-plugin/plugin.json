@@ -1,6 +1,6 @@
 {
   "name": "studio-kit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Shared skills for every project: find unknowns before building, verify UI in a real browser, gate merges, and turn corrections into lasting rules.",
   "author": {
     "name": "adoblake"
