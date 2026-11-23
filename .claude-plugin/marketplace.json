@@ -1,0 +1,11 @@
+{
+  "name": "studio",
+  "owner": { "name": "adoblake" },
+  "plugins": [
+    {
+      "name": "studio-kit",
+      "source": "./",
+      "description": "How we build: kickoff, verify-ui, ship, write-it-down."
+    }
+  ]
+}
