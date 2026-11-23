@@ -11,6 +11,12 @@ How we build, as a Claude Code plugin. One copy, used by every project.
 
 `templates/CLAUDE.md` is the starting point for a new repo's memory file.
 
+## Install it for yourself
+
+```
+/plugin install studio-kit --marketplace adoblake/how-to-make-tasks
+```
+
 ## Turn it on in a project
 
 Add this to the project's `.claude/settings.json` and commit it:

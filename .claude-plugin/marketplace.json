@@ -1,6 +1,9 @@
 {
   "name": "studio",
-  "owner": { "name": "adoblake" },
+  "owner": {
+    "name": "adoblake"
+  },
+  "description": "Our studio's shared Claude Code skills for how we build.",
   "plugins": [
     {
       "name": "studio-kit",
