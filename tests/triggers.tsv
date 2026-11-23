@@ -1,0 +1,22 @@
+expected	prompt
+kickoff	We just signed a new client, a coffee roaster in Phoenix who wants a website and online store. Where do we start?
+kickoff	Here's the business plan Dalton sent over for a new app idea. Let's start building it.
+kickoff	I want to start a new project: an app for booking studio time at local recording studios.
+kickoff	New feature for Bucketlist: tournaments. Before we build anything, help me figure out what I'm missing.
+verify-ui	I just changed the header on the pricing page. Can you check it looks right on mobile and in dark mode?
+verify-ui	The footer looks off on phones, can you take a look and test it?
+verify-ui	Make sure the new contact form works and looks good before I send it to the client.
+verify-ui	Test the homepage redesign across screen sizes before we open the PR.
+ship	This is ready, ship it.
+ship	Merge the PR and make sure it actually goes live on Netlify.
+ship	I merged yesterday but the site still shows the old version. Why isn't my change showing up?
+ship	Is this branch ready to go to production?
+supabase-change	Add a 'phone' column to the profiles table and make sure only the owner can read it.
+supabase-change	We need a new table for court reviews with row level security.
+supabase-change	Write the migration for the sponsorship changes and get it applied before we merge.
+write-it-down	You did that wrong again, you keep using npm instead of the project's script. Don't do that anymore.
+write-it-down	Remember this for next time: on this project the dark mode colors are in two places and both need changing.
+write-it-down	That's the third time the asset versions were stale after a CSS change. Make sure this never happens again.
+none	What's the difference between CSS grid and flexbox?
+none	Write a haiku about basketball.
+none	Explain what a JWT is in two sentences.

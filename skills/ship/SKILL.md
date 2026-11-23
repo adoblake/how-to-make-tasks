@@ -1,6 +1,6 @@
 ---
 name: ship
-description: Get a change from branch to merged and live. Use when the user says ship it, merge, open a PR, deploy, go live, or "is this ready".
+description: Get a change from branch to merged and confirmed live in production. Runs the repo's checks, gets a second-agent review, orders migrations and dashboard steps, writes the PR, and verifies the deploy on Netlify, Vercel, GitHub Pages or Shopify. Use when the user says "ship it", "merge", "open a PR", "deploy", "go live", "push to production", "is this ready", or "why isn't my change showing up".
 ---
 
 # Ship: branch → reviewed → merged → live → finished
@@ -27,9 +27,18 @@ made. Shipping means all the way to live.
    decisions the user needs to make (as a short numbered list, each with a
    recommendation). Don't let a PR wait on questions buried in the description.
 
-5. **Live.** After merge, confirm the production URL serves the new version
-   (fetch it and look for the change; check in a cache-free browser context). If
-   it doesn't, find out why: build failure, cache, or wrong branch.
+5. **Live.** After merge, confirm production serves the new version. Read the
+   reference for the repo's host (its `CLAUDE.md` says which):
+   `references/netlify.md`, `references/vercel.md`, `references/github-pages.md`,
+   or `references/shopify.md`. Then pick a string that only the new version has
+   and run:
+
+   ```bash
+   bash ${CLAUDE_PLUGIN_ROOT}/skills/ship/scripts/is-live.sh https://site.example/page "text only in the new version"
+   ```
+
+   It polls with caches bypassed for up to 10 minutes. If the change isn't live,
+   find out why (build failure, wrong branch, or cache) before touching code.
 
 6. **Close the loop.** Delete the merged branch, update `BRIEF.md` decisions if
    one changed, and capture any lesson with `write-it-down`.
